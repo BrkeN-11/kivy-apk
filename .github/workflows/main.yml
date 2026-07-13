@@ -24,7 +24,10 @@ jobs:
     - name: Build with Buildozer
       run: |
         buildozer android debug
-
+      env:
+        # Buildozer'ın lisansları otomatik kabul etmesini sağlar
+        ANDROIDSDK_ACCEPT_LICENSES: 1
+        
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
