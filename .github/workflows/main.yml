@@ -23,7 +23,7 @@ jobs:
 
     - name: Build with Buildozer
       run: |
-        # SDK lisanslarını kabul et
+        buildozer clean
         echo y | buildozer android debug
         
     - name: Upload artifacts
