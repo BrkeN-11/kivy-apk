@@ -117,8 +117,9 @@ fullscreen = 0
 # (int) Android SDK version to use
 #android.sdk = 20
 
-# (str) Android NDK version to use
-android.ndk = 25b
+# (str) Android NDK directory (if empty, it will be automatically downloaded.)
+# Burayı boş bırakırsan Buildozer en uyumlu olanı kendisi çeker
+android.ndk =
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
 #android.ndk_api = 21
